@@ -117,7 +117,7 @@ class _RegisterState extends State<Register> {
                         ),
                         onPressed: () async {
                           final user =
-                              await auth.createUserWithEmailAndPassword(
+                           await auth.createUserWithEmailAndPassword(
                             emailController.text,
                             passwordController.text,
                           );

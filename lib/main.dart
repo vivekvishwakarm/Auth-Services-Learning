@@ -1,8 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:login/Authentication/wrapper.dart';
 import 'package:login/splash_screen.dart';
 
-Future main() async{
+Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
 
     await Firebase.initializeApp();
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const Wrapper(),
     );
   }
 }
